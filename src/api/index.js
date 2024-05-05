@@ -4,6 +4,7 @@ const authentication = require('./components/authentication/authentication-route
 const users = require('./components/users/users-route');
 const books = require('./components/books/books-route');
 const accessories = require('./components/accessories/accessories-route');
+const trolley = require('./components/trolley/trolley-route');
 // console.log(books);
 // console.log(users);
 module.exports = () => {
@@ -13,6 +14,7 @@ module.exports = () => {
   users(app);
   books(app);
   accessories(app);
+  trolley(app);
 
   return app;
 };
