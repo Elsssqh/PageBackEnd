@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header.ejs') %>
+<%- include('layouts/nav.ejs') %>
+<link rel="stylesheet" type="text/css" href="profilee.css">
+<body>
+
+   <a href="#" onclick="history.back();" class="back-button">Back</a> <!-- Tombol back -->
+    <div class="container">
+        <form action="/users-route" method="get" class="login-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Masukkan JavaScript Bootstrap di sini jika Anda ingin menggunakannya -->
+</body>
+
+<%- include('layouts/footer.ejs') %>
+</html>

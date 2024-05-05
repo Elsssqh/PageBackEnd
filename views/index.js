@@ -26,18 +26,21 @@ app.get('/home', (req, res) => {
     res.render('home', { title: 'Home', layout: 'home' });
 });
 
+app.get('/admin', (req, res) => {
+    res.render('admin', { title: 'admin', layout: 'admin' });
+});
+
 app.get('/accecories', (req, res) => {
     res.render('accecories', { title: 'Accecories', layout: 'accecories' });
 });
 
-app.get('/profile', (req, res) => {
-    res.render('profile', { title: 'profile', layout: 'profile' });
+app.get('/Login', (req, res) => {
+    res.render('Login', { title: 'Login', layout: 'Login' });
 });
 
 app.get('/Register', (req, res) => {
     res.render('Register', { title: 'Register', layout: 'Register' });
 });
-
 
 app.get('/about', (req, res) => {
     res.render('about', { title: 'About', layout: 'home' });

@@ -10,13 +10,14 @@
     "migrate": "node ./migrations/20240324121101_create_default_users.js",
     "eslint": "eslint src/**"
   },
-  "author": " ",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "@joi/date": "^2.1.0",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "celebrate": "^15.0.3",
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
@@ -47,5 +48,5 @@
     "pino-pretty": "^10.3.1",
     "prettier": "^3.2.5"
   },
-  "description": ""
+  "description": "��#\u0000 \u0000P\u0000a\u0000g\u0000e\u0000P\u0000e\u0000t\u0000a\u0000l\u0000B\u0000a\u0000c\u0000k\u0000\r\u0000 \u0000"
 }
