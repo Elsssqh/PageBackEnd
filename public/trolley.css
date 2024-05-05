@@ -159,3 +159,21 @@ footer {
   border: none;
   height: min-content;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-column {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.info-container {
+  text-align: center;
+  margin: 20px;
+}
