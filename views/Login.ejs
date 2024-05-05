@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header.ejs') %>
+  <%- include('layouts/nav.ejs') %>
+      <link rel="stylesheet" type="text/css" href="profilee.css">
+
+    <body>
+    <div class="container">
+        <form action="/login" method="post" class="login-form">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="login">
+            <p>Don't have an account?<a href="/Register">Register</a></p>
+            <p>Login for admin only<a href="/admin"> Click here.</a></p>
+        </form>
+    </div>
+ </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Masukkan JavaScript Bootstrap di sini jika Anda ingin menggunakannya -->
+</body>
+<%- include('layouts/footer.ejs') %>
+</html>

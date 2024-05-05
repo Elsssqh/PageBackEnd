@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="search.css">
+
+<body>
+    <!-- Include header and navigation -->
+    <%- include('layouts/header.ejs') %>
+    <%- include('layouts/nav.ejs') %>
+
+    <section class="search" id="search">
+        <div class="container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search..." ng-model="searchQuery">
+                <select id="category-select">
+                    <option value="all">Books</option>
+                    <option value="title">Accecories</option>
+                </select>
+                <br>
+                <center><button ng-click="searchBooks()">Search</button></center>
+            </div>
+            </form>
+            
+    <div class="products" id="productsContainer">
+    </div>
+
+    <!-- Include your custom JavaScript files -->
+    <script src="search.js"></script>
+
+</body>
+
+<%- include('layouts/footer.ejs') %>
+</html>
