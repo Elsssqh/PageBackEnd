@@ -8,7 +8,8 @@
     "frontend": "nodemon ./views/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "node ./migrations/20240324121101_create_default_users.js",
-    "eslint": "eslint src/**"
+    "eslint": "eslint src/**",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
