@@ -5,6 +5,7 @@ const logger = require('../core/logger')('app');
 const usersSchema = require('./users-schema');
 const bookSchema = require('./book-schema');
 const accessoriesSchema = require('./accessories-schema');
+const trolleySchema = require('./trolley-schema');
 
 mongoose.connect(`${config.database.connection}/${config.database.name}`, {
   useNewUrlParser: true,
@@ -21,10 +22,12 @@ const Accessories = mongoose.model(
   'accessories',
   mongoose.Schema(accessoriesSchema)
 );
+const Trolley = mongoose.model('trolley', mongoose.Schema(trolleySchema));
 
 module.exports = {
   mongoose,
   User,
   Book,
   Accessories,
+  Trolley,
 };
