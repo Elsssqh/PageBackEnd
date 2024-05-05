@@ -31,12 +31,41 @@ header {
 }
 
 body {
+  font-family: 'Courgette', sans-serif;
   background-image: url('asset/gradienbg.png');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
   color: var(--third-color);
   height: 900px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(239, 220, 188);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/*Contact Us*/
+h3 {
+  font-family: 'Courgette', sans-serif;
+  text-align: center;
+  /* Center the text horizontally */
+}
+
+/*nama contact us*/
+.p {
+  font-family: sans-serif;
+  text-align: center;
+  /* Center the text horizontally */
+  padding-top: 1rem;
+  /*Adjusted the padding-top for spacing */
+  color: var(--fourth-color);
 }
 
 
@@ -165,6 +194,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.info-column {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .info-column {
