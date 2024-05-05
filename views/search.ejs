@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" type="text/css" href="search.css">
-
-<body>
-    <!-- Include header and navigation -->
-    <%- include('layouts/header.ejs') %>
+<%- include('layouts/header.ejs') %>
     <%- include('layouts/nav.ejs') %>
+        <link rel="stylesheet" type="text/css" href="search.css">
 
-    <section class="search" id="search">
-        <div class="container">
-            <form id="search-form">
-                <input type="text" id="search-input" placeholder="Search..." ng-model="searchQuery">
-                <select id="category-select">
-                    <option value="all">Books</option>
-                    <option value="title">Accecories</option>
-                </select>
-                <br>
-                <center><button ng-click="searchBooks()">Search</button></center>
-            </div>
-            </form>
-            
-    <div class="products" id="productsContainer">
-    </div>
+        <body>
+            <!-- Include header and navigation -->
+            <section class="search" id="search">
+                <div class="container">
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search..." ng-model="searchQuery">
+                        <select id="category-select">
+                            <option value="all">Books</option>
+                            <option value="title">Accecories</option>
+                        </select>
+                        <br>
+                        <center><button ng-click="searchBooks()">Search</button></center>
+                    </form>
+                </div>
 
-    <!-- Include your custom JavaScript files -->
-    <script src="search.js"></script>
+                <div class="products" id="productsContainer">
+                </div>
 
-</body>
+                <!--Script-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous"></script>
+                <script src="index.js"></script>
 
-<%- include('layouts/footer.ejs') %>
+                <!-- Include your custom JavaScript files
+                <script src="search.js"></script> -->
+
+        </body>
+        <%- include('layouts/footer.ejs') %>
+
 </html>
