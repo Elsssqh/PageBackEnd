@@ -35,6 +35,7 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
+    height: 800px;
     color: var(--fourth-color);
 }
 
