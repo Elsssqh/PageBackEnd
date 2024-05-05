@@ -1,0 +1,196 @@
+/*----FONT---*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --header-height: 3rem;
+
+    /*===== Color Palette =====*/
+    --first-color: rgb(10, 8, 10);
+    --second-color: #e0b36b;
+    --third-color: #c25e24;
+    --fourth-color: #a36a6a;
+    --white-color: #ffffff;
+
+    /*===== Font and typography =====*/
+    --big-font: 'Courgette';
+    --head-font: 'sans-serif';
+    --big-font-size: 2.5rem;
+    --normal-font-size: .938rem;
+}
+
+header {
+    position: flex;
+    width: 100%;
+    height: 60px;
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-image: url('asset/grbg2.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: cover;
+}
+
+#bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.book {
+    border: 1px solid #130e0e;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.book:hover {
+    transform: scale(1.1);
+}
+
+
+.navbar {
+    background-image: url('asset/gradienbg.png') !important;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+.navbar-brand {
+    font-family: 'Courgette', sans-serif;
+    color: var(--first-color) !important;
+    margin: 0 20px;
+
+}
+
+.navbar-brand:hover {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: var(--fourth-color);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav {
+    font-family: 'Courgette', sans-serif;
+    color: var(--fourth-color);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+
+}
+
+.navbar-nav:hover {
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+}
+
+.nav-item {
+    color: var(--fourth-color);
+    margin: 0 20px;
+
+}
+
+.nav-item:hover {
+    background-color: rgba(237, 237, 237, 0.3);
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    margin-left: 10px;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 26, 26, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: rgba(252, 252, 252, 0.795);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.overlay img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+section.buku {
+    /* height: 170vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    background-image: url('asset/gradienbg.png') !important;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+
+}
+
+.overlay-content p {
+    font-family: var(--head-font);
+    /* Apply sans-serif font to overlay description */
+    color: var(--first-color);
+}
+
+.book {
+    border: 1px transparent;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: var(--head-font);
+    /* Apply sans-serif font to book description */
+    color: var(--first-color);
+}
+
+.add-to-trolley {
+    margin-top: 10px;
+}
+
+.add-to-trolley button {
+    padding: 10px 20px;
+    background-color: rgb(42, 38, 32);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-trolley button:hover {
+    background-color: rgb(95, 94, 87);
+}
+
+.book h3 {
+    font-size: 14px;
+    /* Adjust the font size to your preference */
+    margin-top: 5px;
+    /* Optional: Add margin to separate title from other elements */
+}
