@@ -10,10 +10,10 @@
     /*===== Color Palette =====*/
     --first-color: rgb(10, 8, 10);
     --second-color: #e0b36b;
-    --third-color: #c25e24; 
+    --third-color: #c25e24;
     --fourth-color: #a36a6a;
-    --white-color:  #ffffff;
-    
+    --white-color: #ffffff;
+
     /*===== Font and typography =====*/
     --big-font: 'Courgette';
     --head-font: 'sans-serif';
@@ -40,20 +40,24 @@ body {
 
 h1 {
     font-family: 'Courgette', sans-serif;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
+    /* Center the text horizontally */
     padding-top: 6rem;
     color: var(--fourth-color);
 }
 
 h3 {
     font-family: 'Courgette', sans-serif;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
+    /* Center the text horizontally */
 }
 
 .p {
     font-family: sans-serif;
-    text-align: center; /* Center the text horizontally */
-    padding-top: 1rem; /*Adjusted the padding-top for spacing */
+    text-align: center;
+    /* Center the text horizontally */
+    padding-top: 1rem;
+    /*Adjusted the padding-top for spacing */
     color: var(--fourth-color);
 }
 
@@ -66,8 +70,8 @@ h3 {
 
 .navbar-brand {
     font-family: 'Courgette', sans-serif;
-    color: var(--first-color)!important; 
-    margin: 0 20px; 
+    color: var(--first-color) !important;
+    margin: 0 20px;
 
 }
 
@@ -75,41 +79,41 @@ h3 {
     border: 2px solid transparent;
     border-radius: 20px;
     color: var(--fourth-color);
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .navbar-nav {
     font-family: 'Courgette', sans-serif;
     color: var(--fourth-color);
-    background-color: rgba(255, 255, 255, 0.3); 
-    border: 2px solid transparent; 
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid transparent;
     border-radius: 50px;
-    transition: background-color 0.3s ease; 
-    
+    transition: background-color 0.3s ease;
+
 }
 
 .navbar-nav:hover {
     border: 2px solid transparent;
     border-radius: 50px;
-    
+
 }
 
 .nav-item {
     color: var(--fourth-color);
-    margin : 0 20px;
-   
+    margin: 0 20px;
+
 }
 
-.nav-item:hover{
-    background-color: rgba(255, 255, 255, 0.3); 
-    transition: background-color 0.3s ease; 
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
     border-radius: 50px;
     margin-left: 10px;
-    
-     transform: scale(1.1); 
-    transition: transform 0.3s ease; 
-    
+
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
 }
 
 
@@ -195,7 +199,7 @@ body {
 
 
 .overlay-content p {
-    font-family: var(--head-font); 
+    font-family: var(--head-font);
     color: var(--second-color);
 }
 
@@ -207,19 +211,19 @@ body {
     width: 150px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-    font-family: var(--head-font); 
+    font-family: var(--head-font);
     color: var(--third-color);
 }
 
 .book h3 {
-    font-size: 14px; 
-    margin-top: 5px; 
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .info-container img {
-    max-width: 25px; 
-    max-height: 25px; 
-    border-radius: 50%; 
+    max-width: 25px;
+    max-height: 25px;
+    border-radius: 50%;
     color: var(--fourth-color);
 }
 
@@ -233,9 +237,9 @@ span2 {
 
 section.about {
     padding-bottom: 10%;
-    margin-left:20%;
-    margin-right:20%;
-    
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 
 .action-btn {
@@ -249,12 +253,13 @@ section.about {
     margin: 1em 0;
     transition: 0.3s;
 }
-  
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000;
+    /* Ensure the header is above other content */
     /* Add any other styles you need */
 }
 
@@ -307,12 +312,14 @@ a:hover {
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto; /* Menengahkan form */
+    max-width: 70%;
+    margin: 50px auto;
+    /* Menengahkan form */
     padding: 20px;
     background-color: #fff;
     border-radius: 70px;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan ke atas */
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
+    /* Menambahkan efek bayangan ke atas */
 }
 
 .login-form label {
@@ -359,33 +366,54 @@ a:hover {
 
 /* CSS untuk tombol "Back" */
 .back-button {
-    color: #007bff; /* Warna teks */
-    text-decoration: none; /* Hapus garis bawah */
-    cursor: pointer; /* Tampilan kursor saat dihover */
-    transition: color 0.3s ease; /* Animasi perubahan warna saat hover */
-    background-color: #fff; /* Warna background */
-    border: 1px solid #007bff; /* Garis tepi */
-    border-radius: 20px; /* Radius sudut */
-    padding: 10px 20px; /* Padding (atas-bawah, kiri-kanan) */
-    display: inline-block; /* Agar bisa memberikan padding */
+    color: #007bff;
+    /* Warna teks */
+    text-decoration: none;
+    /* Hapus garis bawah */
+    cursor: pointer;
+    /* Tampilan kursor saat dihover */
+    transition: color 0.3s ease;
+    /* Animasi perubahan warna saat hover */
+    background-color: #fff;
+    /* Warna background */
+    border: 1px solid #007bff;
+    /* Garis tepi */
+    border-radius: 20px;
+    /* Radius sudut */
+    padding: 10px 20px;
+    /* Padding (atas-bawah, kiri-kanan) */
+    display: inline-block;
+    /* Agar bisa memberikan padding */
 }
 
 /* CSS untuk tombol "Back" */
 .back-button {
-    color: #007bff; /* Warna teks */
-    text-decoration: none; /* Hapus garis bawah */
-    cursor: pointer; /* Tampilan kursor saat dihover */
-    transition: color 0.3s ease; /* Animasi perubahan warna saat hover */
-    background-color: #fff; /* Warna background */
-    border: 1px solid #007bff; /* Garis tepi */
-    border-radius: 20px; /* Radius sudut */
-    padding: 10px 20px; /* Padding (atas-bawah, kiri-kanan) */
-    display: inline-block; /* Agar bisa memberikan padding */
-    margin-top: 20px; /* Jarak di atas tombol */
+    color: #007bff;
+    /* Warna teks */
+    text-decoration: none;
+    /* Hapus garis bawah */
+    cursor: pointer;
+    /* Tampilan kursor saat dihover */
+    transition: color 0.3s ease;
+    /* Animasi perubahan warna saat hover */
+    background-color: #fff;
+    /* Warna background */
+    border: 1px solid #007bff;
+    /* Garis tepi */
+    border-radius: 20px;
+    /* Radius sudut */
+    padding: 10px 20px;
+    /* Padding (atas-bawah, kiri-kanan) */
+    display: inline-block;
+    /* Agar bisa memberikan padding */
+    margin-top: 20px;
+    /* Jarak di atas tombol */
 }
 
 /* Efek hover */
 .back-button:hover {
-    color: #0056b3; /* Warna teks saat dihover */
-    background-color: #f0f0f0; /* Warna background saat dihover */
+    color: #0056b3;
+    /* Warna teks saat dihover */
+    background-color: #f0f0f0;
+    /* Warna background saat dihover */
 }
