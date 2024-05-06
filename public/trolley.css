@@ -2,213 +2,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 * {
-  list-style: none;
-  text-decoration: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
-  --header-height: 3rem;
+    --header-height: 3rem;
 
-  --first-color: rgb(10, 8, 10);
-  --second-color: #e0b36b;
-  --third-color: #c25e24;
-  --fourth-color: #a36a6a;
-
-  /*===== Font and typography =====*/
-  --big-font: 'Courgette';
-  --head-font: 'sans-serif';
-  --big-font-size: 2.5rem;
-  --normal-font-size: .938rem;
+    --first-color: rgb(10, 8, 10);
+    --second-color: #e0b36b;
+    --third-color: #c25e24; 
+    --fourth-color: #a36a6a;
+    
+    /*===== Font and typography =====*/
+    --big-font: 'Courgette';
+    --head-font: 'sans-serif';
+    --big-font-size: 2.5rem;
+    --normal-font-size: .938rem;
 }
 
 header {
-  position: flex;
-  width: 100%;
-  height: 60px;
-  color: transparent;
-  padding: 10px;
-  text-align: center;
+    position: flex;
+    width: 100%;
+    height: 60px;
+    color: transparent;
+    padding: 10px;
+    text-align: center;
 }
 
 body {
-  font-family: 'Courgette', sans-serif;
-  background-image: url('asset/gradienbg.png');
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: cover;
-  color: var(--third-color);
-  height: 900px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: rgb(239, 220, 188);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-
-
-/*Contact Us*/
-h3 {
-  font-family: 'Courgette', sans-serif;
-  text-align: center;
-  /* Center the text horizontally */
-}
-
-/*nama contact us*/
-.p {
-  font-family: sans-serif;
-  text-align: center;
-  /* Center the text horizontally */
-  padding-top: 1rem;
-  /*Adjusted the padding-top for spacing */
-  color: var(--fourth-color);
+    background-image: url('asset/gradienbg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    color: var(--third-color);
+    height: 900px;
 }
 
 
 .navbar {
-  background-image: url('asset/grbg2.png') !important;
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: cover;
+    background-image: url('asset/grbg2.png') !important;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
 }
 
 .navbar-brand {
-  font-family: 'Courgette', sans-serif;
-  color: black;
-  margin: 0 20px;
+    font-family: 'Courgette', sans-serif;
+    color: black;
+    margin: 0 20px; 
 
 }
 
 .navbar-brand:hover {
-  border: 2px solid transparent;
-  border-radius: 20px;
-  color: var(--white-color);
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: var(--white-color);
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
 
-.nav-brand:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: background-color 0.3s ease;
-  border-radius: 50px;
-  margin-left: 10px;
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+.nav-brand:hover{
+    background-color: rgba(255, 255, 255, 0.3); 
+    transition: background-color 0.3s ease; 
+    border-radius: 50px;
+    margin-left: 10px;
+     transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
 
 
 .navbar-nav {
-  font-family: 'Courgette', sans-serif;
-  color: var(--white-color);
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 2px solid transparent;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-
+    font-family: 'Courgette', sans-serif;
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.3); 
+    border: 2px solid transparent; 
+    border-radius: 50px;
+    transition: background-color 0.3s ease; 
+    
 }
 
 .navbar-nav:hover {
-  border: 2px solid transparent;
-  border-radius: 50px;
+    border: 2px solid transparent;
+    border-radius: 50px;
 }
 
 .nav-item {
-  color: var(--white-color);
-  margin: 0 20px;
+    color: var(--white-color);
+    margin : 0 20px;
 }
 
-.nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: background-color 0.3s ease;
-  border-radius: 50px;
-  margin-left: 10px;
-
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-
+.nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.3); 
+    transition: background-color 0.3s ease; 
+    border-radius: 50px;
+    margin-left: 10px;
+    
+     transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    
 }
 
 .btn {
-  color: var(--white-color);
+    color: var(--white-color);
 }
 
 .trolley {
-  background-color: transparent;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+    background-color: transparent;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .trolley h2 {
-  font-size: 1.2em;
-  margin-bottom: 8px;
+    font-size: 1.2em;
+    margin-bottom: 8px;
 }
 
 #trolleyItems {
-  list-style: none;
-  padding: 10px;
+    list-style: none;
+    padding: 10px;
 }
 
 #trolleyItems div {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 #totalPrice {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 #payButton {
-  background-color: #e69452b4;
-  color: white;
-  font-size: 16px;
-  border: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  /* Ensure the header is above other content */
-  /* Add any other styles you need */
-}
-
-
-footer {
-  color: var(--second-color);
-  text-align: center;
-  background-image: url('asset/footerbg.png');
-  padding: 1.5rem;
-  overflow: hidden;
-  border: none;
-  height: min-content;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.info-column {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.info-column {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.info-container {
-  text-align: center;
-  margin: 20px;
+    background-color: #e69452b4;
+    color: white;
+    font-size: 16px;
+    border:none;
 }
